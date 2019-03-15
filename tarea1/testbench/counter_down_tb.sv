@@ -19,7 +19,7 @@ module counter_down_tb();
  
   //creo el clk
   initial begin 
-  clk = 0;
+  clk = 1;
   forever #5 clk = ~clk;
   end
   
@@ -28,7 +28,7 @@ module counter_down_tb();
   clr = 1;
   #20;
   clr = 0;
-  #10;
+  #5;
   clr = 1;
   #10;
   clr = 0;

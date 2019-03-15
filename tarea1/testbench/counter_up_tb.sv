@@ -19,7 +19,7 @@ module counter_up_tb();
  
   //creo el clk
   initial begin 
-  clk = 0;
+  clk = 1;
   forever #5 clk = ~clk;
   end
   
@@ -29,6 +29,10 @@ module counter_up_tb();
   #20;
   clr = 0;
   #10;
+  clr = 1;
+  #5;
+  clr = 0;
+  #50;
   clr = 1;
   #10;
   clr = 0;
