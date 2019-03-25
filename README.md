@@ -1,7 +1,5 @@
 # IEE2753-2019-eaanais
 
-# IEE2463 - Sistemas Electrónicos Programables
-
 En este repositorio encontrarás recursos importantes sobre Sistemas Electrónicos Programables como laboratorios y pautas. 
 
 [Introducción a GitHub](https://github.com/IEE2463/classroom/blob/master/Material%20de%20apoyo/GitHub/Introducción%20a%20GitHub.pdf) 
