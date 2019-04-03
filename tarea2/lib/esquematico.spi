@@ -1,0 +1,21 @@
+*** SPICE deck for cell esquematico{sch} from library cmos_inv
+*** Created on mar abr 02, 2019 21:02:27
+*** Last revised on mar abr 02, 2019 21:29:50
+*** Written on mar abr 02, 2019 23:08:38 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: esquematico{sch}
+Mnmos@1 Vout vin gnd gnd NMOS L=0.6U W=1.5U
+Mpmos@0 vdd vin Vout vdd PMOS L=0.6U W=3U
+
+* Spice Code nodes in cell cell 'esquematico{sch}'
+vdd vdd 0 DC 5
+*vin in 0 DC 0
+*.dc vin 0 5 1m
+vin vin 0 pulse 0 5 0 1n 1n .5m 1m
+.tran 2m
+.include C:\Users\Lenovo\Documents\PUC\UC 2019-1\Integrados Digitales\Tarea2_screen\C5_models.txt
+.END

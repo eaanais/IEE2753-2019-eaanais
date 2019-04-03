@@ -1,0 +1,73 @@
+# header information:
+Hcmos_inv|9.07
+
+# Views:
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D300.0
+
+# Cell esquematico;1{sch}
+Cesquematico;1{sch}||schematic|1554249747765|1554257528679|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-29|0||||
+NOff-Page|conn@1||-5|0||||
+NGround|gnd@0||-14|-12||||
+NTransistor|nmos@1||-16|-4|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S5|SIM_spice_model(D5G1;Y-7;)SNMOS
+NWire_Pin|pin@1||-27|4||||
+NWire_Pin|pin@5||-17|0||||
+NWire_Pin|pin@6||-14|0||||
+Ngeneric:Invisible-Pin|pin@7||-31|23|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 5,*vin in 0 DC 0,*.dc vin 0 5 1m,vin vin 0 pulse 0 5 0 1n 1n .5m 1m,.tran 2m,".include C:\\Users\\Lenovo\\Documents\\PUC\\UC 2019-1\\Integrados Digitales\\Tarea2_screen\\C5_models.txt"]
+NWire_Pin|pin@8||-2|0||||
+NTransistor|pmos@0||-16|4|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S10|SIM_spice_model(D5G1;Y-5;)SPMOS
+NPower|pwr@0||-14|12||||
+Awire|net@2|||2700|conn@0|y|-27|0|pin@1||-27|4
+Awire|net@3|||0|pmos@0|g|-17|4|pin@1||-27|4
+Awire|net@11|||1800|conn@0|y|-27|0|pin@5||-17|0
+Awire|net@12|||2700|nmos@1|g|-17|-4|pin@5||-17|0
+Awire|net@14|||900|nmos@1|s|-14|-6|gnd@0||-14|-10
+Awire|net@15|||2700|nmos@1|d|-14|-2|pin@6||-14|0
+Awire|net@16|||2700|pin@6||-14|0|pmos@0|s|-14|2
+Awire|net@17|||1800|pin@6||-14|0|conn@1|a|-7|0
+Awire|net@18|||900|pwr@0||-14|12|pmos@0|d|-14|6
+Awire|net@19|||1800|conn@1|y|-3|0|pin@8||-2|0
+Evin||D5G2;|conn@0|y|U
+EVout|vout|D5G2;|conn@1|y|U
+X
+
+# Cell inv_layout;1{lay}
+Cinv_layout;1{lay}||mocmos|1554249432386|1554257295037||DRC_last_good_drc_area_date()G1554257300262|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1554257300262
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@2||-59|27|||R|
+NMetal-1-N-Active-Con|contact@3||-49|27|||R|
+NMetal-1-P-Active-Con|contact@4||-58|50|5||R|
+NMetal-1-P-Active-Con|contact@5||-49|50|5||R|
+NMetal-1-Polysilicon-1-Con|contact@6||-62|37||||
+NN-Transistor|nmos@1||-54|27|2||R||SIM_spice_model(D5G1;Y-19;)SNMOS
+NPolysilicon-1-Pin|pin@0||-54|37||||
+NMetal-1-Pin|pin@1||-71|37||||
+NMetal-1-Pin|pin@2||-49|38||||
+NMetal-1-Pin|pin@3||-40|38||||
+Ngeneric:Invisible-Pin|pin@4||-92|64|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 5,*vin in 0 DC 0,*.dc vin 0 5 1m,vin vin 0 pulse 0 5 0 1n 1n .5m 1m,.tran 2m,".include C:\\Users\\Lenovo\\Documents\\PUC\\UC 2019-1\\Integrados Digitales\\Tarea2_screen\\C5_models.txt"]
+NP-Transistor|pmos@0||-54|50|7||R||SIM_spice_model(D5G1;Y-14;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-54|16|10|||
+NMetal-1-N-Well-Con|well@0||-53|62|10|||
+AN-Active|net@0|||S0|contact@3||-49|27|nmos@1|diff-bottom|-50.25|27
+AN-Active|net@1|||S1800|contact@2||-59|27|nmos@1|diff-top|-57.75|27
+AP-Active|net@2|||S1800|contact@4||-58|50|pmos@0|diff-top|-57.75|50
+AP-Active|net@3|||S0|contact@5||-49|50|pmos@0|diff-bottom|-50.25|50
+AMetal-1|net@5||1|S900|well@0||-58|62|contact@4||-58|50
+AMetal-1|net@6||1|S900|contact@2||-59|27|substr@0||-59|16
+APolysilicon-1|net@8|||S2700|nmos@1|poly-right|-54|31.5|pin@0||-54|37
+APolysilicon-1|net@9|||S2700|pin@0||-54|37|pmos@0|poly-left|-54|43
+APolysilicon-1|net@10|||S0|pin@0||-54|37|contact@6||-62|37
+AMetal-1|net@11||1|S0|contact@6||-62|37|pin@1||-71|37
+AMetal-1|net@12||1|S900|contact@5||-49|50|pin@2||-49|38
+AMetal-1|net@13||1|S900|pin@2||-49|38|contact@3||-49|27
+AMetal-1|net@14||1|S1800|pin@2||-49|38|pin@3||-40|38
+Egnd||D5G2;|substr@0||U
+Evdd||D5G2;|well@0||U
+Evin||D5G2;|pin@1||U
+Evout||D5G2;|pin@3||U
+X
