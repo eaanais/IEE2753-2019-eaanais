@@ -34,6 +34,8 @@ wire [3:0] aluControl;
 
 wire [31:0] 	instruction;
 wire [31:0] 	ALUOut;
+
+assign mipsOut = ALUOut;
    
 datapath datapath_1  (.clk(clk),
                       .rst(rst), 
@@ -56,7 +58,7 @@ datapath datapath_1  (.clk(clk),
                 );
                 
 aluControl aluControl_1 (.aluOp(ALUOp),
-                   .inst(instruction),
+                   .inst(instruction[5:0]),
                    .aluControl(aluControl)//output
     );
     

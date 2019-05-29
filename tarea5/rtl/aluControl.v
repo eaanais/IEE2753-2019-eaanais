@@ -26,7 +26,7 @@ module aluControl( input [1:0] aluOp,
     );
     
     always@*
-    case({aluOp, inst})
+    casez({aluOp, inst})
         8'b00??????: aluControl = 4'b0010;
         8'b01??????: aluControl = 4'b0110;
         8'b10000101: aluControl = 4'b0100; //bne
@@ -35,6 +35,7 @@ module aluControl( input [1:0] aluOp,
         8'b10100100: aluControl = 4'b0000;
         8'b10100101: aluControl = 4'b0001;
         8'b10100111: aluControl = 4'b1100;
+        default: aluControl = 4'b0010;
         
     endcase
     

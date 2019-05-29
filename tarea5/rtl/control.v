@@ -186,6 +186,11 @@ module control(input  [5:0] 	op,
         nextState = fetch;
         end
         
+     default:
+        begin
+        nextState = fetch;
+        end
+        
         
     endcase
     

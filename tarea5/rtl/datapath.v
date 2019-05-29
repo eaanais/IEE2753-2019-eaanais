@@ -151,7 +151,7 @@ module datapath (input 			clk , rst,
            .aluOverflow(overflow)
     );
                
-  register registro_alu_out(.din(ALUResult), 
+  register registro_alu_out (.din(ALUResult), 
             .clk(clk), 
             .en(1'b1), 
             .rst(rst),
@@ -162,8 +162,8 @@ module datapath (input 			clk , rst,
     .sel(PCSource),
     .din0(ALUResult),
     .din1(ALUOut),
-    .din2(ALUOut),
-    .din3({PC[31:28],Instr[25:0],2'b00}),
+    .din2({PC[31:28],Instr[25:0],2'b00}),
+    .din3(32'bx),
     .dout(PC_prima)
   );
 

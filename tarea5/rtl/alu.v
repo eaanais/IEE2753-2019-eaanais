@@ -23,7 +23,10 @@ module alu (input [32-1:0] aluInA,
      4'b0000 : aluResult = aluInA & aluInB; //AND
      4'b0001 : aluResult = aluInA | aluInB; //OR
      4'b0010 : aluResult = aluInA + aluInB;	//Suma
-     4'b0101 : begin if(aluInA != aluInB) aluResult = 32'd0; end//beq
+     4'b0101 : begin 
+     if(aluInA != aluInB) 
+     aluResult = 32'd0; 
+     end//beq
      4'b0110 : aluResult = aluInA - aluInB; //Resta
      4'b1100 : aluResult = ~(aluInA | aluInB); //NOR
      4'b1101 : aluResult = aluInA ^ aluInB;  //XOR
