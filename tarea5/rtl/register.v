@@ -1,6 +1,6 @@
-module register #(parameter N = 1)(input [N-1:0] din, 
+module register (input [32-1:0] din, 
                                    input clk, en, rst,
-                                   output reg [N-1:0] dout
+                                   output reg [32-1:0] dout
     );
 
   
