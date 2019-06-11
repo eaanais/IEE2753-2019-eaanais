@@ -34,12 +34,41 @@ module alu (input [32-1:0] aluInA,
      4'b0000 : begin aluResult = aluInA & aluInB; aluZero = 0; end//AND
      4'b0001 : begin aluResult = aluInA | aluInB; aluZero = 0; end//OR
      4'b0010 : begin aluResult = aluInA + aluInB;	aluZero = 0; end//Suma
-     4'b1000 : begin if(aluInA == aluInB) begin aluResult = 32'd0; aluZero = 1;end end//beq
-     4'b1001 : begin if(aluInA != aluInB) begin aluResult = 32'd0; aluZero = 1;end end//bne
+     
+     4'b1000 : begin 
+                   if(aluInA == aluInB) 
+                       begin
+                       aluResult = 32'd0; 
+                       aluZero = 1;
+                       end
+                   else
+                       begin
+                       aluResult = 32'd0; 
+                       aluZero = 0;
+                       end
+               end//beq
+     
+     
+     
+     4'b1001 : begin 
+               if(aluInA != aluInB) 
+                    begin 
+                    aluResult = 32'd0; 
+                    aluZero = 1;
+                    end 
+                else 
+                    begin
+                    aluResult = 32'd0; 
+                    aluZero = 0;
+                    end
+                
+                end//bne
+                    
+     
      4'b0110 : begin aluResult = aluInA - aluInB; aluZero = 0; end//Resta
      4'b1100 : begin aluResult = ~(aluInA | aluInB); aluZero = 0; end//NOR
      4'b1101 : begin aluResult = aluInA ^ aluInB;  aluZero = 0; end//XOR
-     default : begin aluResult = aluInA + aluInB; aluZero = 0; end//Por defecto realizo la suma
+     default : begin aluResult = 0; aluZero = 0; end//Por defecto realizo la suma
   endcase
-
 endmodule
+

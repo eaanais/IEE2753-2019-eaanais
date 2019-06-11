@@ -1,0 +1,13 @@
+read_verilog ./rtl/mips.v  ./rtl/control.v ./rtl/aluControl.v ./rtl/nextPCLogic.v ./rtl/register.v ./rtl/mux2to1.v ./rtl/regfile.v ./rtl/signExtend.v ./rtl/shiftLeft2.v ./rtl/mux4to1.v ./rtl/alu.v ./rtl/datapath.v 
+ 
+read_liberty -lib osu035_stdcells.lib
+
+synth -top mips 
+
+dfflibmap -liberty osu035_stdcells.lib
+abc -D 10000 -constr example.constr -liberty osu035_stdcells.lib
+opt_clean
+
+stat -liberty osu035_stdcells.lib
+
+write_verilog synth.v

@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -22,7 +22,7 @@
 
 module mips_tb();
 
-reg clk,  rst;
+reg clk = 0,  rst = 1;
 wire memoryWrite;
 wire memoryRead;
 wire  [32-1:0] MemData;
@@ -51,22 +51,23 @@ memory memoria_externa(.clk(clk),
     .MemAddr(MemAddr)
   );
 
-
-
     initial begin 
     forever #5 clk = ~clk;
     end
- 
- 
+
   
   //establezco las condiciones para realizar la prueba
   initial begin
-  clk = 0;
-  rst = 1;
+  $dumpfile("mips_sintesis_tb.vcd");
+  $dumpvars(0,mips_tb);
   #100;
   rst = 0;
   #700 $finish;
   end
 
+
+  initial
+     $monitor("At time %t, value = %h (%0d)",
+              $time, MemAddr, MemAddr);
 
 endmodule

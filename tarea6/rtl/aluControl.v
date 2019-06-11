@@ -35,7 +35,8 @@ module aluControl( input [1:0] aluOp,
         8'b10100010: aluControl = 4'b0110;
         8'b10100100: aluControl = 4'b0000;
         8'b10100101: aluControl = 4'b0001;
-        //8'b10100110: aluControl = 4'b1101; 
+	8'b10100110: aluControl = 4'b1101; //
+      //  8'b10100110: aluControl = 4'b1101; 
         8'b10100111: aluControl = 4'b1100;
         default: aluControl = 4'b0010;
         
