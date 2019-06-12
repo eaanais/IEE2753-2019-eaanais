@@ -22,7 +22,8 @@
 
 module mips_tb();
 
-reg clk = 0,  rst = 1;
+reg clk = 1; 
+reg rst = 1;
 wire memoryWrite;
 wire memoryRead;
 wire  [32-1:0] MemData;
@@ -66,8 +67,10 @@ memory memoria_externa(.clk(clk),
   end
 
 
-  initial
-     $monitor("At time %t, value = %h (%0d)",
-              $time, MemAddr, MemAddr);
+ initial
+begin
+     $display("clk, rst, ALUOut, PC, instruction, ALUOp, aluControl, SrcA, SrcB, memoryOutData");
+     $monitor("%d, ",UUT.memoria_externa.clk, "%d, ",UUT.memoria_externa.rst, "%d, ", UUT.datapath_1.ALUOut, "%d, ", UUT.datapath_1.PC, "%b, ", UUT.datapath_1.instruction, "%d, ", UUT.ALUOp, "%d, ", UUT.aluControl, "%d, ", UUT.datapath_1.SrcA, "%d, ", UUT.datapath_1.SrcB, "%b, ", UUT.memoria_externa.memoryOutData);
+end
 
 endmodule
