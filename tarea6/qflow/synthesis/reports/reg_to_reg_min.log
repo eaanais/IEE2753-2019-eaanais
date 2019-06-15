@@ -1,0 +1,186 @@
+Vesta static timing analysis, register-to-register minimum timing
+
+Top 20 minimum delay paths:
+Path DFFPOSX1_996/CLK to DFFPOSX1_996/D delay 219.381 ps
+      0.0 ps                                clk_bF_buf89:   CLKBUF1_25/Y -> DFFPOSX1_996/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__3_: DFFPOSX1_996/Q ->  NAND2X1_395/A
+    253.7 ps                                      _6354_:  NAND2X1_395/Y -> OAI21X1_1288/C
+    317.7 ps                                      _1440_: OAI21X1_1288/Y -> DFFPOSX1_996/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1008/CLK to DFFPOSX1_1008/D delay 219.381 ps
+      0.0 ps                                  clk_bF_buf3:   CLKBUF1_111/Y -> DFFPOSX1_1008/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__15_: DFFPOSX1_1008/Q ->   NAND2X1_407/A
+    253.7 ps                                       _6366_:   NAND2X1_407/Y ->  OAI21X1_1300/C
+    317.7 ps                                       _1424_:  OAI21X1_1300/Y -> DFFPOSX1_1008/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1024/CLK to DFFPOSX1_1024/D delay 219.381 ps
+      0.0 ps                                 clk_bF_buf86:    CLKBUF1_28/Y -> DFFPOSX1_1024/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__31_: DFFPOSX1_1024/Q ->   NAND2X1_423/A
+    253.7 ps                                       _6382_:   NAND2X1_423/Y ->  OAI21X1_1316/C
+    317.7 ps                                       _1860_:  OAI21X1_1316/Y -> DFFPOSX1_1024/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1020/CLK to DFFPOSX1_1020/D delay 219.381 ps
+      0.0 ps                                 clk_bF_buf86:    CLKBUF1_28/Y -> DFFPOSX1_1020/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__27_: DFFPOSX1_1020/Q ->   NAND2X1_419/A
+    253.7 ps                                       _6378_:   NAND2X1_419/Y ->  OAI21X1_1312/C
+    317.7 ps                                       _1435_:  OAI21X1_1312/Y -> DFFPOSX1_1020/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1007/CLK to DFFPOSX1_1007/D delay 219.381 ps
+      0.0 ps                                 clk_bF_buf86:    CLKBUF1_28/Y -> DFFPOSX1_1007/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__14_: DFFPOSX1_1007/Q ->   NAND2X1_406/A
+    253.7 ps                                       _6365_:   NAND2X1_406/Y ->  OAI21X1_1299/C
+    317.7 ps                                       _1423_:  OAI21X1_1299/Y -> DFFPOSX1_1007/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1005/CLK to DFFPOSX1_1005/D delay 219.381 ps
+      0.0 ps                                 clk_bF_buf51:    CLKBUF1_63/Y -> DFFPOSX1_1005/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__12_: DFFPOSX1_1005/Q ->   NAND2X1_404/A
+    253.7 ps                                       _6363_:   NAND2X1_404/Y ->  OAI21X1_1297/C
+    317.7 ps                                       _1421_:  OAI21X1_1297/Y -> DFFPOSX1_1005/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1013/CLK to DFFPOSX1_1013/D delay 219.381 ps
+      0.0 ps                                 clk_bF_buf49:    CLKBUF1_65/Y -> DFFPOSX1_1013/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__20_: DFFPOSX1_1013/Q ->   NAND2X1_412/A
+    253.7 ps                                       _6371_:   NAND2X1_412/Y ->  OAI21X1_1305/C
+    317.7 ps                                       _1429_:  OAI21X1_1305/Y -> DFFPOSX1_1013/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1003/CLK to DFFPOSX1_1003/D delay 219.381 ps
+      0.0 ps                                 clk_bF_buf13:   CLKBUF1_101/Y -> DFFPOSX1_1003/CLK
+    157.4 ps  datapath_1_RegisterFile_regfile_mem_31__10_: DFFPOSX1_1003/Q ->   NAND2X1_402/A
+    253.7 ps                                       _6361_:   NAND2X1_402/Y ->  OAI21X1_1295/C
+    317.7 ps                                       _1420_:  OAI21X1_1295/Y -> DFFPOSX1_1003/D
+
+   clock skew at destination = 0
+   hold at destination = -98.2738
+
+Path DFFPOSX1_1063/CLK to DFFPOSX1_1063/D delay 220.957 ps
+      0.0 ps     clk_bF_buf52:    CLKBUF1_62/Y -> DFFPOSX1_1063/CLK
+    123.9 ps  datapath_1_A_6_: DFFPOSX1_1063/Q ->   NAND2X1_602/A
+    234.0 ps           _6865_:   NAND2X1_602/Y ->   AOI21X1_351/A
+    322.2 ps        _6851__6_:   AOI21X1_351/Y -> DFFPOSX1_1063/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1078/CLK to DFFPOSX1_1078/D delay 220.957 ps
+      0.0 ps      clk_bF_buf57:    CLKBUF1_57/Y -> DFFPOSX1_1078/CLK
+    123.9 ps  datapath_1_A_21_: DFFPOSX1_1078/Q ->   NAND2X1_632/A
+    234.0 ps            _6895_:   NAND2X1_632/Y ->   AOI21X1_366/A
+    322.2 ps        _6851__21_:   AOI21X1_366/Y -> DFFPOSX1_1078/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1080/CLK to DFFPOSX1_1080/D delay 220.957 ps
+      0.0 ps     clk_bF_buf104:    CLKBUF1_10/Y -> DFFPOSX1_1080/CLK
+    123.9 ps  datapath_1_A_23_: DFFPOSX1_1080/Q ->   NAND2X1_636/A
+    234.0 ps            _6899_:   NAND2X1_636/Y ->   AOI21X1_368/A
+    322.2 ps        _6851__23_:   AOI21X1_368/Y -> DFFPOSX1_1080/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1065/CLK to DFFPOSX1_1065/D delay 220.957 ps
+      0.0 ps     clk_bF_buf91:    CLKBUF1_23/Y -> DFFPOSX1_1065/CLK
+    123.9 ps  datapath_1_A_8_: DFFPOSX1_1065/Q ->   NAND2X1_606/A
+    234.0 ps           _6869_:   NAND2X1_606/Y ->   AOI21X1_353/A
+    322.2 ps        _6851__8_:   AOI21X1_353/Y -> DFFPOSX1_1065/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1083/CLK to DFFPOSX1_1083/D delay 220.957 ps
+      0.0 ps      clk_bF_buf43:    CLKBUF1_71/Y -> DFFPOSX1_1083/CLK
+    123.9 ps  datapath_1_A_26_: DFFPOSX1_1083/Q ->   NAND2X1_642/A
+    234.0 ps            _6905_:   NAND2X1_642/Y ->   AOI21X1_371/A
+    322.2 ps        _6851__26_:   AOI21X1_371/Y -> DFFPOSX1_1083/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1088/CLK to DFFPOSX1_1088/D delay 220.957 ps
+      0.0 ps      clk_bF_buf43:    CLKBUF1_71/Y -> DFFPOSX1_1088/CLK
+    123.9 ps  datapath_1_A_31_: DFFPOSX1_1088/Q ->   NAND2X1_652/A
+    234.0 ps            _6915_:   NAND2X1_652/Y ->   AOI21X1_376/A
+    322.2 ps        _6851__31_:   AOI21X1_376/Y -> DFFPOSX1_1088/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1066/CLK to DFFPOSX1_1066/D delay 220.957 ps
+      0.0 ps     clk_bF_buf97:    CLKBUF1_17/Y -> DFFPOSX1_1066/CLK
+    123.9 ps  datapath_1_A_9_: DFFPOSX1_1066/Q ->   NAND2X1_608/A
+    234.0 ps           _6871_:   NAND2X1_608/Y ->   AOI21X1_354/A
+    322.2 ps        _6851__9_:   AOI21X1_354/Y -> DFFPOSX1_1066/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1062/CLK to DFFPOSX1_1062/D delay 220.957 ps
+      0.0 ps     clk_bF_buf88:    CLKBUF1_26/Y -> DFFPOSX1_1062/CLK
+    123.9 ps  datapath_1_A_5_: DFFPOSX1_1062/Q ->   NAND2X1_600/A
+    234.0 ps           _6863_:   NAND2X1_600/Y ->   AOI21X1_350/A
+    322.2 ps        _6851__5_:   AOI21X1_350/Y -> DFFPOSX1_1062/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1061/CLK to DFFPOSX1_1061/D delay 220.957 ps
+      0.0 ps     clk_bF_buf43:    CLKBUF1_71/Y -> DFFPOSX1_1061/CLK
+    123.9 ps  datapath_1_A_4_: DFFPOSX1_1061/Q ->   NAND2X1_598/A
+    234.0 ps           _6861_:   NAND2X1_598/Y ->   AOI21X1_349/A
+    322.2 ps        _6851__4_:   AOI21X1_349/Y -> DFFPOSX1_1061/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1087/CLK to DFFPOSX1_1087/D delay 220.957 ps
+      0.0 ps      clk_bF_buf97:    CLKBUF1_17/Y -> DFFPOSX1_1087/CLK
+    123.9 ps  datapath_1_A_30_: DFFPOSX1_1087/Q ->   NAND2X1_650/A
+    234.0 ps            _6913_:   NAND2X1_650/Y ->   AOI21X1_375/A
+    322.2 ps        _6851__30_:   AOI21X1_375/Y -> DFFPOSX1_1087/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1074/CLK to DFFPOSX1_1074/D delay 220.957 ps
+      0.0 ps      clk_bF_buf52:    CLKBUF1_62/Y -> DFFPOSX1_1074/CLK
+    123.9 ps  datapath_1_A_17_: DFFPOSX1_1074/Q ->   NAND2X1_624/A
+    234.0 ps            _6887_:   NAND2X1_624/Y ->   AOI21X1_362/A
+    322.2 ps        _6851__17_:   AOI21X1_362/Y -> DFFPOSX1_1074/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Path DFFPOSX1_1071/CLK to DFFPOSX1_1071/D delay 220.957 ps
+      0.0 ps      clk_bF_buf57:    CLKBUF1_57/Y -> DFFPOSX1_1071/CLK
+    123.9 ps  datapath_1_A_14_: DFFPOSX1_1071/Q ->   NAND2X1_618/A
+    234.0 ps            _6881_:   NAND2X1_618/Y ->   AOI21X1_359/A
+    322.2 ps        _6851__14_:   AOI21X1_359/Y -> DFFPOSX1_1071/D
+
+   clock skew at destination = 0
+   hold at destination = -101.197
+
+Design meets minimum hold timing.
+-----------------------------------------
+

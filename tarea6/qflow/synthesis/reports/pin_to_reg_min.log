@@ -1,0 +1,145 @@
+Vesta static timing analysis, pin-to-register and register-to-pin minimum timing
+
+Top 20 minimum delay paths:
+Path input pin MemData[12] to DFFPOSX1_1165/D delay 57.9689 ps
+      0.0 ps  MemData[12]:               ->   NAND2X1_805/B
+     74.0 ps       _7074_: NAND2X1_805/Y ->   AOI21X1_453/B
+    157.7 ps   _7049__12_: AOI21X1_453/Y -> DFFPOSX1_1165/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[5] to DFFPOSX1_1158/D delay 57.9689 ps
+      0.0 ps  MemData[5]:               ->   NAND2X1_791/B
+     74.0 ps      _7060_: NAND2X1_791/Y ->   AOI21X1_446/B
+    157.7 ps   _7049__5_: AOI21X1_446/Y -> DFFPOSX1_1158/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[1] to DFFPOSX1_1154/D delay 57.9689 ps
+      0.0 ps  MemData[1]:               ->   NAND2X1_783/B
+     74.0 ps      _7052_: NAND2X1_783/Y ->   AOI21X1_442/B
+    157.7 ps   _7049__1_: AOI21X1_442/Y -> DFFPOSX1_1154/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[19] to DFFPOSX1_1140/D delay 57.9689 ps
+      0.0 ps  MemData[19]:               ->   NAND2X1_755/B
+     74.0 ps       _7022_: NAND2X1_755/Y ->   AOI21X1_428/B
+    157.7 ps   _6983__19_: AOI21X1_428/Y -> DFFPOSX1_1140/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[15] to DFFPOSX1_1136/D delay 57.9689 ps
+      0.0 ps  MemData[15]:               ->   NAND2X1_747/B
+     74.0 ps       _7014_: NAND2X1_747/Y ->   AOI21X1_424/B
+    157.7 ps   _6983__15_: AOI21X1_424/Y -> DFFPOSX1_1136/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[3] to DFFPOSX1_1124/D delay 57.9689 ps
+      0.0 ps  MemData[3]:               ->   NAND2X1_723/B
+     74.0 ps      _6990_: NAND2X1_723/Y ->   AOI21X1_412/B
+    157.7 ps   _6983__3_: AOI21X1_412/Y -> DFFPOSX1_1124/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[25] to DFFPOSX1_1178/D delay 57.9689 ps
+      0.0 ps  MemData[25]:               ->   NAND2X1_831/B
+     74.0 ps       _7100_: NAND2X1_831/Y ->   AOI21X1_466/B
+    157.7 ps   _7049__25_: AOI21X1_466/Y -> DFFPOSX1_1178/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[24] to DFFPOSX1_1177/D delay 57.9689 ps
+      0.0 ps  MemData[24]:               ->   NAND2X1_829/B
+     74.0 ps       _7098_: NAND2X1_829/Y ->   AOI21X1_465/B
+    157.7 ps   _7049__24_: AOI21X1_465/Y -> DFFPOSX1_1177/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[23] to DFFPOSX1_1176/D delay 57.9689 ps
+      0.0 ps  MemData[23]:               ->   NAND2X1_827/B
+     74.0 ps       _7096_: NAND2X1_827/Y ->   AOI21X1_464/B
+    157.7 ps   _7049__23_: AOI21X1_464/Y -> DFFPOSX1_1176/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[22] to DFFPOSX1_1175/D delay 57.9689 ps
+      0.0 ps  MemData[22]:               ->   NAND2X1_825/B
+     74.0 ps       _7094_: NAND2X1_825/Y ->   AOI21X1_463/B
+    157.7 ps   _7049__22_: AOI21X1_463/Y -> DFFPOSX1_1175/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[21] to DFFPOSX1_1174/D delay 57.9689 ps
+      0.0 ps  MemData[21]:               ->   NAND2X1_823/B
+     74.0 ps       _7092_: NAND2X1_823/Y ->   AOI21X1_462/B
+    157.7 ps   _7049__21_: AOI21X1_462/Y -> DFFPOSX1_1174/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[20] to DFFPOSX1_1173/D delay 57.9689 ps
+      0.0 ps  MemData[20]:               ->   NAND2X1_821/B
+     74.0 ps       _7090_: NAND2X1_821/Y ->   AOI21X1_461/B
+    157.7 ps   _7049__20_: AOI21X1_461/Y -> DFFPOSX1_1173/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[19] to DFFPOSX1_1172/D delay 57.9689 ps
+      0.0 ps  MemData[19]:               ->   NAND2X1_819/B
+     74.0 ps       _7088_: NAND2X1_819/Y ->   AOI21X1_460/B
+    157.7 ps   _7049__19_: AOI21X1_460/Y -> DFFPOSX1_1172/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[18] to DFFPOSX1_1171/D delay 57.9689 ps
+      0.0 ps  MemData[18]:               ->   NAND2X1_817/B
+     74.0 ps       _7086_: NAND2X1_817/Y ->   AOI21X1_459/B
+    157.7 ps   _7049__18_: AOI21X1_459/Y -> DFFPOSX1_1171/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[17] to DFFPOSX1_1170/D delay 57.9689 ps
+      0.0 ps  MemData[17]:               ->   NAND2X1_815/B
+     74.0 ps       _7084_: NAND2X1_815/Y ->   AOI21X1_458/B
+    157.7 ps   _7049__17_: AOI21X1_458/Y -> DFFPOSX1_1170/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[16] to DFFPOSX1_1169/D delay 57.9689 ps
+      0.0 ps  MemData[16]:               ->   NAND2X1_813/B
+     74.0 ps       _7082_: NAND2X1_813/Y ->   AOI21X1_457/B
+    157.7 ps   _7049__16_: AOI21X1_457/Y -> DFFPOSX1_1169/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[11] to DFFPOSX1_1164/D delay 57.9689 ps
+      0.0 ps  MemData[11]:               ->   NAND2X1_803/B
+     74.0 ps       _7072_: NAND2X1_803/Y ->   AOI21X1_452/B
+    157.7 ps   _7049__11_: AOI21X1_452/Y -> DFFPOSX1_1164/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[25] to DFFPOSX1_1146/D delay 57.9689 ps
+      0.0 ps  MemData[25]:               ->   NAND2X1_767/B
+     74.0 ps       _7034_: NAND2X1_767/Y ->   AOI21X1_434/B
+    157.7 ps   _6983__25_: AOI21X1_434/Y -> DFFPOSX1_1146/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[11] to DFFPOSX1_1132/D delay 57.9689 ps
+      0.0 ps  MemData[11]:               ->   NAND2X1_739/B
+     74.0 ps       _7006_: NAND2X1_739/Y ->   AOI21X1_420/B
+    157.7 ps   _6983__11_: AOI21X1_420/Y -> DFFPOSX1_1132/D
+
+   hold at destination = -99.6886
+
+Path input pin MemData[31] to DFFPOSX1_1184/D delay 57.9689 ps
+      0.0 ps  MemData[31]:               ->   NAND2X1_843/B
+     74.0 ps       _7112_: NAND2X1_843/Y ->   AOI21X1_472/B
+    157.7 ps   _7049__31_: AOI21X1_472/Y -> DFFPOSX1_1184/D
+
+   hold at destination = -99.6886
+
+-----------------------------------------
+
