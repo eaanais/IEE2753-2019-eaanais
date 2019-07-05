@@ -12,7 +12,7 @@ En color magenta se puede observar la salida del filtro, esta concuerda con el c
 
 ![testbenc_registro](/proyecto/testbench/respuesta_al_impulso.png)
 
-![testbench_grafico](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso_grafico.png)
+![testbench_grafico](/proyecto/testbench/respuesta_al_impulso_grafico.png)
 
 El archivo [rom.mem](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/rtl/rom.mem) contiene los coeficientes utilizados, de igual forma se adjuntan en este informe a continuación
 
