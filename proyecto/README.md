@@ -10,9 +10,9 @@ Se debe ejecutar el archivo [fir2n_tb.v](https://github.com/eaanais/IEE2753-2019
 
 En color magenta se puede observar la salida del filtro, esta concuerda con el clock pequeño que corresponde a la frecuencia o tasa de muestreo del audio
 
-![testbenc_registro](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso.png?token=AI64INQRLH3JVHF3VOFUSEK5D23VQ)
+![testbenc_registro](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso.png)
 
-![testbench_grafico](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso_grafico.png?token=AI64INRG7Q67UK2XNOVCJVC5D24AG)
+![testbench_grafico](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso_grafico.png)
 
 El archivo [rom.mem](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/rtl/rom.mem) contiene los coeficientes utilizados, de igual forma se adjuntan en este informe a continuación
 
