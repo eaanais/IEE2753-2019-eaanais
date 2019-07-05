@@ -8,7 +8,7 @@ Para poder realizar el testbench y, de esta forma, conocer la respuesta al impul
 
 Se debe ejecutar el archivo [fir2n_tb.v](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v) que ya viene con los datos y el tiempo necesario para poder apreciar la salida (en mi caso utilizé vivado y EDA playground)
 
-En color magenta se puede observar la salida del filtro, esta concuerda con el clock pequeño que corresponde a la frecuencia o tasa de muestreo del audio
+En color **magenta** se puede observar la salida del filtro, esta concuerda con el clock pequeño que corresponde a la frecuencia o tasa de muestreo del audio
 
 ![testbenc_registro](/proyecto/testbench/respuesta_al_impulso.png)
 
