@@ -1,10 +1,18 @@
-# Título del Proyecto
+# FIR 2N
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Se realizó el módulo fir2N como se indicó en el enunciado, con los parámetros correspondientes
 
-## Comenzando 🚀
+## Respuesta al impulso 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+Para poder realizar el testbench y, de esta forma, conocer la respuesta al impulso, se implementó en la entrada del filtro un impulso de tamaño 1 y luego solo 0's. De esta forma, la salida, por cada clock, corresponderá a los coeficientes del filtro
+
+Se debe ejecutar el archivo [fir2n_tb.v](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v) que ya viene con los datos y el tiempo necesario para poder apreciar la salida
+
+En color magenta se puede observar la salida del filtro, esta concuerda con el clock pequeño que corresponde a la frecuencia o tasa de muestreo del audio
+
+![testbenc_registro](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso.png?token=AI64INQRLH3JVHF3VOFUSEK5D23VQ)
+
+![testbench_grafico](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso_grafico.png?token=AI64INRG7Q67UK2XNOVCJVC5D24AG)
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
