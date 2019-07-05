@@ -32,13 +32,13 @@ module test;
 
   always #10 clk = ~clk;
   
-  initial begin
+   initial begin
     $dumpfile("dump.vcd"); $dumpvars;
     clk = 0;
-    din = 5;
+    din = 1;
     reset = 1;
     #40 reset = 0;
- 
+    #340 din = 0;
     /*
     #10 reset =0;
     Add = 5;
@@ -53,7 +53,7 @@ module test;
     repeat (10)
       #20 $display("data_in:%b, data_out:%b",
         Add, q);*/
-    #5000 $finish();
+    #6200 $finish();
   end
   
 endmodule

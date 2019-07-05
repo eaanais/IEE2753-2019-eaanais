@@ -10,7 +10,7 @@ module asr8 #(parameter WIDTH_DATA = 8, parameter N_TAPS = 16)(input clk, clr, e
 wire [WIDTH_DATA-1:0]cables[N_TAPS:0];
 
 //asigno con multiplexor la salida y la entrada
-assign q = cables[add];
+assign q = cables[add+1];
 assign cables[0] = d;
 
 //genero los registros
