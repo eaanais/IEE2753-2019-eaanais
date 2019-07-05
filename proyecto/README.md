@@ -4,9 +4,9 @@ Se realizó el módulo fir2N como se indicó en el enunciado, con los parámetro
 
 ## Respuesta al impulso 🚀
 
-Para poder realizar el testbench y, de esta forma, conocer la respuesta al impulso, se implementó en la entrada del filtro un impulso de tamaño 1 y luego solo 0's. De esta forma, la salida, por cada clock, corresponderá a los coeficientes del filtro
+Para poder realizar el testbench y, de esta forma, conocer la respuesta al impulso, se implementó en la entrada del filtro un impulso de tamaño 1 y luego solo 0's. De esta forma, la salida, por cada clock, corresponderá a los coeficientes del filtro (como es 2N se repetirá la secuencia pero decreciente)
 
-Se debe ejecutar el archivo [fir2n_tb.v](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v) que ya viene con los datos y el tiempo necesario para poder apreciar la salida
+Se debe ejecutar el archivo [fir2n_tb.v](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v) que ya viene con los datos y el tiempo necesario para poder apreciar la salida (en mi caso utilizé vivado y EDA playground)
 
 En color magenta se puede observar la salida del filtro, esta concuerda con el clock pequeño que corresponde a la frecuencia o tasa de muestreo del audio
 
