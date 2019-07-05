@@ -10,7 +10,7 @@ Se debe ejecutar el archivo [fir2n_tb.v](https://github.com/eaanais/IEE2753-2019
 
 En color magenta se puede observar la salida del filtro, esta concuerda con el clock pequeño que corresponde a la frecuencia o tasa de muestreo del audio
 
-![testbenc_registro](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso.png)
+![testbenc_registro](/proyecto/testbench/respuesta_al_impulso.png)
 
 ![testbench_grafico](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso_grafico.png)
 
