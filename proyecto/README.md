@@ -14,8 +14,18 @@ En color magenta se puede observar la salida del filtro, esta concuerda con el c
 
 ![testbench_grafico](https://raw.githubusercontent.com/eaanais/IEE2753-2019-eaanais/master/proyecto/testbench/respuesta_al_impulso_grafico.png?token=AI64INRG7Q67UK2XNOVCJVC5D24AG)
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+El archivo [rom.mem](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/rtl/rom.mem) contiene los coeficientes utilizados, de igual forma se adjuntan en este informe a continuación
 
+```
+00000001
+00000010
+00000011
+00000100
+00000101
+00000110
+00000111
+00001000
+```
 
 ### Pre-requisitos 📋
 
