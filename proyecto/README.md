@@ -1,6 +1,6 @@
 # FIR 2N
 
-Se realizó el módulo fir2N como se indicó en el enunciado, con los parámetros correspondientes
+Se realizó el módulo fir2N como se indicó en el enunciado, parametrizados y con los parámetros por defecto correspondientes
 
 ## Respuesta al impulso 🚀
 
