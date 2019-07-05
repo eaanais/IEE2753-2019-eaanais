@@ -21,7 +21,7 @@
 
 
 // Testbench
-module test;
+module fir2n_tb;
 
   reg clk;
   reg reset;
