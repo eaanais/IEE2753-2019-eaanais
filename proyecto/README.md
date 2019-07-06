@@ -33,6 +33,10 @@ Para verificar el contenido, también se puede revisar el [log pre sintesis](htt
 
 Se realizó la síntesis mediante **yosys** ([archivo sintetizado](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/synth.v)), y se modificó los archivos para utilizar la librería adecuada. Los archivos modificados fueron [Makefile](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/Makefile) y [flow.ys](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/flow.ys)
 
+Se adjunta una imagen del tb en iverilog al reemplazar el módulo FIR por el sintetizado
+
+![testbenc_post](/proyecto/iverilog_sintetizado/respuesta_al_impulso_post_sintesis.png)
+
 Para ejecutar todo lo correspondiente a esta carpeta se utilizó el siguiente comando en la consola (terminal)
 
 ```
