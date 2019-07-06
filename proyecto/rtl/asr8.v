@@ -18,7 +18,7 @@ genvar i;
 generate //creo los registros necesarios
   for (i=0; i < N_TAPS; i=i+1) 
        begin
-       register #(.N(WIDTH_DATA)) retardos (
+       register_asr #(.N(WIDTH_DATA)) retardos (
        .clk(clk),
        .clr(clr),
        .en(en),

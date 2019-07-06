@@ -34,15 +34,15 @@ module rom8 #(parameter WIDTH_COEF0=8, parameter N_TAPS = 16)(input clk, clr,
   //Inicializacion de la memoria con valores arbitrarios
   initial begin
   //$memreadb
-  $readmemb("rom.mem", rom);
- /*   rom[0] = 8; 
-    rom[1] = 7;
-    rom[2] = 6;
-    rom[3] = 5;
-    rom[4] = 4; 
-    rom[5] = 3;
-    rom[6] = 2;
-    rom[7] = 1;*/
+ // $readmemb("rom.mem", rom);
+    rom[0] = 1; 
+    rom[1] = 2;
+    rom[2] = 3;
+    rom[3] = 4;
+    rom[4] = 5; 
+    rom[5] = 6;
+    rom[6] = 7;
+    rom[7] = 8;
   end
   
   
