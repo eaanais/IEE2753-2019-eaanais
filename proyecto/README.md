@@ -31,7 +31,7 @@ Para verificar el contenido, también se puede revisar el [log pre sintesis](htt
 
 ### Síntesis 📦
 
-Se realizó la síntesis mediante **yosys**, [archivo sintetizado](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/synth.v), y se modificó los archivos para utilizar la librería adecuada. Los archivos modificados fueron [Makefile](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/Makefile) y [flow.ys](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/flow.ys)
+Se realizó la síntesis mediante **yosys** ([archivo sintetizado](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/synth.v)), y se modificó los archivos para utilizar la librería adecuada. Los archivos modificados fueron [Makefile](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/Makefile) y [flow.ys](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/flow.ys)
 
 Para ejecutar todo lo correspondiente a esta carpeta se utilizó el siguiente comando en la consola (terminal)
 
@@ -39,7 +39,7 @@ Para ejecutar todo lo correspondiente a esta carpeta se utilizó el siguiente co
 Make
 ```
 
-Para verificar el correcto funcionamiento luego de sintetizar el módulo, se puede comparar el [log post síntesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/iverilog_sintetizado/log_fir_sintetizado.log) con el anterior que ya fue mencionado en el apartado de la respuesta al impulso
+Para verificar el correcto funcionamiento luego de sintetizar el módulo, se puede comparar el [log post síntesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/iverilog_sintetizado/log_fir_sintetizado.log) con el anterior que ya fue mencionado en el apartado de la respuesta al impulso ([log pre sintesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v))
 
 ### QFLOW (STA) 📋
 Mediante **qflow**, y su interfaz gráfica, se utilizó la librería correcta para este caso y se obtuvo el [log STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/sta.log). Además se puede revisar el [log post STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/post_sta.log) por si resulta de interés.
@@ -52,23 +52,16 @@ qflow gui
 
 ### MAGIC (GDS) 🖇️
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+Para este último paso se utilizó la carpeta [layout](https://github.com/eaanais/IEE2753-2019-eaanais/tree/master/proyecto/qflow/layout) de qflow con los archivos generados hasta antes del DRC. Mediante el archivo [run drc FIR](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/layout/run_drc_FIR.tcl), que es una modificación del entregado por el profesor en los ejemplos, se generó el [GDS](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/layout/FIR.gds) del FIR. Ya por último se utilizó **klayout** para generar la imágen.
 
 ![gds_png](/proyecto/qflow/layout/imagen_final.png)
+
+El comando utilizado para el DRC y el comando utilizado para la imagen (gds) respectivamente fueron los siguientes
+
+```
+magic -dnull -noconsole ./run_drc_FIR.tcl 
+klayout FIR.gds
+```
 
 ---
 Plantilla ⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
