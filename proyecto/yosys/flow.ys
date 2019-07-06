@@ -1,0 +1,13 @@
+read_verilog ./rtl/adder.v ./rtl/asr8.v ./rtl/counter_down.v ./rtl/counter_up.v ./rtl/divisor_clock.v ./rtl/FIR.v ./rtl/MAC.v ./rtl/register.v ./rtl/register_asr.v ./rtl/retardo_N.v ./rtl/rom8.v 
+ 
+read_liberty -lib osu05_stdcells.lib
+
+synth -top FIR  
+
+dfflibmap -liberty osu05_stdcells.lib
+abc -D 10000 -constr example.constr -liberty osu05_stdcells.lib
+opt_clean
+
+stat -liberty osu05_stdcells.lib
+
+write_verilog synth.v
