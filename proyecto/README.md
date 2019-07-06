@@ -56,7 +56,7 @@ Para este último paso se utilizó la carpeta [layout](https://github.com/eaanai
 
 ![gds_png](/proyecto/qflow/layout/imagen_final.png)
 
-El comando utilizado para el DRC y el comando utilizado para la imagen (gds) respectivamente fueron los siguientes
+El comando utilizado para el DRC y, el comando utilizado para la imagen del gds, fueron respectivamente los siguientes
 
 ```
 magic -dnull -noconsole ./run_drc_FIR.tcl 
