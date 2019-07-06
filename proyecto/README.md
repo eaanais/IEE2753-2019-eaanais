@@ -29,15 +29,28 @@ Al momento de realizar la simulación en iverilog no pude cargar los coeficiente
 
 Para verificar el contenido, también se puede revisar el [log pre sintesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v)
 
-### Síntesis (STA) 📋
+### Síntesis 📦
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+Se realizó la síntesis mediante **yosys**, [archivo sintetizado](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/synth.v), y se modificó los archivos para utilizar la librería adecuada. Los archivos modificados fueron [Makefile](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/Makefile) y [flow.ys](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/yosys/flow.ys)
+
+Para ejecutar todo lo correspondiente a esta carpeta se utilizó el siguiente comando en la consola (terminal)
 
 ```
-Da un ejemplo
+Make
 ```
 
-### MAGIC (GDS) 🔧
+Para verificar el correcto funcionamiento luego de sintetizar el módulo, se puede comparar el [log post síntesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/iverilog_sintetizado/log_fir_sintetizado.log) con el anterior que ya fue mencionado en el apartado de la respuesta al impulso
+
+### QFLOW (STA) 📋
+Mediante **qflow**, y su interfaz gráfica, se utilizó la librería correcta para este caso y se obtuvo el [log STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/sta.log). Además se puede revisar el [log post STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/post_sta.log) por si resulta de interés.
+
+En esta caso el comando utilizado fue
+
+```
+qflow gui
+```
+
+### MAGIC (GDS) 🖇️
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
@@ -57,71 +70,5 @@ _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para 
 
 ![gds_png](/proyecto/qflow/layout/imagen_final.png)
 
-## GDS ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Deployment 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+Plantilla ⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
