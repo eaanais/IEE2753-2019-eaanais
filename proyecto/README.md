@@ -42,7 +42,7 @@ Make
 Para verificar el correcto funcionamiento luego de sintetizar el módulo, se puede comparar el [log post síntesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/iverilog_sintetizado/log_fir_sintetizado.log) con el anterior que ya fue mencionado en el apartado de la respuesta al impulso ([log pre sintesis](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/testbench/fir2n_tb.v))
 
 ### QFLOW (STA) 📋
-Mediante **qflow**, y su interfaz gráfica, se utilizó la librería correcta para este caso y se obtuvo el [log STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/sta.log). Además se puede revisar el [log post STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/post_sta.log) por si resulta de interés.
+Mediante **qflow**, y su interfaz gráfica, se utilizó la librería correcta para este caso y se obtuvo el [log STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/sta.log). Además se puede revisar el [log post STA](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/log/post_sta.log) por si resulta de interés
 
 En esta caso el comando utilizado fue
 
@@ -52,7 +52,7 @@ qflow gui
 
 ### MAGIC (GDS) 🖇️
 
-Para este último paso se utilizó la carpeta [layout](https://github.com/eaanais/IEE2753-2019-eaanais/tree/master/proyecto/qflow/layout) de qflow con los archivos generados hasta antes del DRC. Mediante el archivo [run drc FIR](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/layout/run_drc_FIR.tcl), que es una modificación del entregado por el profesor en los ejemplos, se generó el [GDS](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/layout/FIR.gds) del FIR. Ya por último se utilizó **klayout** para generar la imágen.
+Para este último paso se utilizó la carpeta [layout](https://github.com/eaanais/IEE2753-2019-eaanais/tree/master/proyecto/qflow/layout) de qflow con los archivos generados hasta antes del DRC. Mediante el archivo [run drc FIR](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/layout/run_drc_FIR.tcl), que es una modificación del entregado por el profesor en los ejemplos, se generó el [GDS](https://github.com/eaanais/IEE2753-2019-eaanais/blob/master/proyecto/qflow/layout/FIR.gds) del FIR. Ya por último se utilizó **klayout** para generar la imágen
 
 ![gds_png](/proyecto/qflow/layout/imagen_final.png)
 
