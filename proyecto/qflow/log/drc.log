@@ -1,0 +1,41 @@
+Qflow DRC logfile created on Fri Jul 5 20:54:44 PDT 2019
+magic -dnull -noconsole  /home/openvlsi/proyecto/IEE2753-2019-eaanais/proyecto/qflow_viernes/layout/run_drc_FIR.tcl
+
+Magic 8.2 revision 110 - Compiled on Sun Apr 28 16:56:58 PDT 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+Loading "/home/openvlsi/proyecto/IEE2753-2019-eaanais/proyecto/qflow_viernes/layout/run_drc_FIR.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/osu050/osu050_stdcells.lef.
+This action cannot be undone.
+LEF Read, Line 16: Unknown keyword "OBS" in LEF file; ignoring.
+LEF Read, Line 17: Unknown keyword "PIN" in LEF file; ignoring.
+LEF file:  Defines site corner (ignored)
+LEF file:  Defines site IO (ignored)
+LEF file:  Defines site core (ignored)
+LEF read: Processed 3221 lines.
+LEF Read: encountered 2 errors total.
+FIR: 10000 rects
+FIR: 20000 rects
+FIR: 30000 rects
+FIR: 40000 rects
+FIR: 50000 rects
+FIR: 60000 rects
+FIR: 70000 rects
+FIR: 80000 rects
+FIR: 90000 rects
+FIR: 100000 rects
+Processing timestamp mismatches: FILL, INVX1, OAI21X1, DFFSR, NOR2X1, NAND2X1, BUFX2, NAND3X1, XOR2X1, AOI21X1, AOI22X1, CLKBUF1, DFFPOSX1, OR2X2, XNOR2X1, AND2X2, OAI22X1, NOR3X1.
+drc = 3109
+DRC failure:  There are 3109 DRC errors in the layout.
+Premature exit.
+Synthesis flow stopped due to error condition.

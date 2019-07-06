@@ -1,0 +1,115 @@
+Qflow migration logfile created on Fri Jul 5 20:27:25 PDT 2019
+magic -dnull -noconsole  migrate_FIR.tcl
+
+Magic 8.2 revision 110 - Compiled on Sun Apr 28 16:56:58 PDT 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+Loading "migrate_FIR.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:    0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+internal:      0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/osu050/osu050_stdcells.lef.
+This action cannot be undone.
+LEF Read, Line 16: Unknown keyword "OBS" in LEF file; ignoring.
+LEF Read, Line 17: Unknown keyword "PIN" in LEF file; ignoring.
+LEF file:  Defines site corner (ignored)
+LEF file:  Defines site IO (ignored)
+LEF file:  Defines site core (ignored)
+LEF read: Processed 3221 lines.
+LEF Read: encountered 2 errors total.
+Reading DEF data from file FIR.def.
+This action cannot be undone.
+  Processed 2 vias total.
+  Processed 24372 subcell instances total.
+  Processed 18 pins total.
+  Processed 1652 nets total.
+  Processed 5 special nets total.
+LEF Read, Line 44744: Unknown keyword "-" in DEF file; ignoring.
+LEF Read, Line 45187: Unknown keyword "-" in DEF file; ignoring.
+LEF Read, Line 45630: END statement out of context.
+DEF read: Processed 45631 lines.
+LEF Read: encountered 3 errors total.
+Generating LEF output FIR.lef for cell FIR:
+Diagnostic:  Write LEF header for cell FIR
+Diagnostic:  Writing LEF output for cell FIR
+Diagnostic:  Scale value is 0.050000
+Extracting OR2X2 into OR2X2.ext:
+Completed 100%
+Extracting AOI22X1 into AOI22X1.ext:
+Completed 100%
+Extracting NOR3X1 into NOR3X1.ext:
+Completed 100%
+Extracting XNOR2X1 into XNOR2X1.ext:
+Completed 100%
+Extracting XOR2X1 into XOR2X1.ext:
+Completed 100%
+Extracting AND2X2 into AND2X2.ext:
+Completed 100%
+Extracting AOI21X1 into AOI21X1.ext:
+Completed 100%
+Extracting OAI22X1 into OAI22X1.ext:
+Completed 100%
+Extracting NAND3X1 into NAND3X1.ext:
+Completed 100%
+Extracting NOR2X1 into NOR2X1.ext:
+Completed 100%
+Extracting DFFPOSX1 into DFFPOSX1.ext:
+Completed 50%
+Completed 75%
+Completed 100%
+Extracting BUFX2 into BUFX2.ext:
+Completed 100%
+Extracting CLKBUF1 into CLKBUF1.ext:
+Completed 50%
+Completed 75%
+Completed 100%
+Extracting NAND2X1 into NAND2X1.ext:
+Completed 100%
+Extracting OAI21X1 into OAI21X1.ext:
+Completed 100%
+Extracting INVX1 into INVX1.ext:
+Completed 100%
+Extracting DFFSR into DFFSR.ext:
+Completed 33%
+Completed 50%
+Completed 67%
+Completed 83%
+Completed 100%
+Extracting FILL into FILL.ext:
+Completed 100%
+Extracting FIR into FIR.ext:
+Completed 5%
+Completed 10%
+Completed 15%
+Completed 20%
+Completed 25%
+Completed 30%
+Completed 35%
+Completed 40%
+Completed 45%
+Completed 50%
+Completed 55%
+Completed 60%
+Completed 65%
+Completed 70%
+Completed 75%
+Completed 80%
+Completed 85%
+Completed 90%
+Completed 95%
+Completed 100%
+exttospice finished.
+Migration script ended on Fri Jul 5 20:28:00 PDT 2019
